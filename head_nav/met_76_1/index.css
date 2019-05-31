@@ -1,0 +1,559 @@
+$uicss .clearfix:after {
+	content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+$uicss ul,$uicss li {
+	margin: 0;
+	padding: 0;	
+}
+$uicss ul li {
+	list-style: none;
+}
+$uicss .float-left {
+	float: left;
+}
+$uicss .float-right {
+	float: right;
+}
+$uicss.nav-fixed {
+	position: fixed !important;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+$uicss.nav-fixed.active .head-nav {
+	background-color: $thirdcolor$;
+	background-color: $fixed_nav_bg$;
+}
+$uicss.nav-fixed.active .nav-btn {
+	line-height: 40px !important;
+	color: $fixed_nav_color$;
+}
+$uicss.nav-fixed.active .logo-wrap {
+	margin-top: 0;
+}
+$uicss.nav-fixed.active .head-nav-wrapper {
+	top: 40px;
+}
+$uicss.navbar {
+	position: relative;
+	z-index: 2000;
+	box-shadow: none;
+	min-height: auto;
+}
+$uicss .head-top-bar {
+	height: 44px;
+	line-height: 44px;
+	background-color: $bodybgcolor$;
+	background-color: $top_bg_color$;
+	font-size: 12px;
+	color: $secondcolor$;
+	color: $topcolor$;
+}
+$uicss .top-text {
+	max-width: 30%;
+	height: 44px;
+	overflow: hidden;
+}
+/* 搜索 */
+$uicss .search-wrap {
+	color: $secondcolor$;
+	color: $input_font_color$;
+}
+/* 切换简繁体 */
+$uicss .cut-font-wrap {
+	margin-right: 10px;
+	position: relative;
+}
+$uicss .cut-font-wrap a {
+	color: $secondcolor$;
+	color: $select_color$;
+}
+$uicss .cut-font-wrap:hover .cut-font-sub {
+	display: block;
+}
+$uicss .cut-font-sub {
+	display: none;
+	position: absolute;
+	z-index: 9999;
+	top: 80%;
+	right: 50%;
+	min-width: 60px;
+	border-radius: 4px;
+	background-color: $bodybgcolor$;
+	background-color: $select_bg$;
+	transform: translateX(50%);
+	-webkit-transform: translateX(50%);
+	overflow: hidden;
+}
+$uicss .cut-language {
+	width: 80px;
+}
+$uicss .cut-font-sub .cut-item {
+	line-height: 30px;
+	width: 100%;
+	text-align: center;
+	color: ;
+	cursor: pointer;
+}
+$uicss .cut-font-sub .cut-item:hover {
+	background-color: $thirdcolor$;
+	background-color: $select_bg_active$;
+	color: $select_color_active$;
+}
+$uicss .cut-font-sub .cut-item:hover a {
+	color: $select_color_active$;
+}
+/* 多语言 */
+$uicss .met-langlist button {
+	padding-left: 10px;
+	padding-right: 10px;
+	border: none;
+	font-size: 12px;
+	color: $secondcolor$;
+	color: $topcolor$;
+}
+$uicss .btn-outline.btn-default.active, 
+$uicss .btn-outline.btn-default:active, 
+$uicss .btn-outline.btn-default:focus, 
+$uicss .btn-outline.btn-default:hover, 
+$uicss .open>.btn-outline.btn-default.dropdown-toggle {
+	background-color: transparent;
+}
+$uicss .dropdown-item {
+	line-height: 30px;
+}
+/* 登录注册 */
+$uicss .btn-outline.btn-primary {
+	background-color: transparent;
+	border-color: $thirdcolor$;
+	border-color: $login_border$;
+	color: $thirdcolor$;
+	color: $login_color$;
+}
+$uicss .btn-success {
+	background-color: $thirdcolor$;
+	background-color: $sign_bg$;
+	color: $sign_color$;
+	border: 1px solid;
+	border-color: $thirdcolor$;
+	border-color: $sign_bg$;
+}
+
+$uicss .head-nav {
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	background-color: $nav_bg$;
+}
+$uicss .logo-wrap {
+	margin-top: 15px;
+	display: block;
+	width: 120px;
+	max-width: 20%;
+}
+$uicss .logo-wrap img {
+	display: block;
+	width: 100%;
+}
+$uicss .nav-menu {
+	display: none;
+	position: relative;
+	max-width: 80%;
+	font-size: 14px;
+}
+$uicss .nav-menu .nav-item {
+	padding: 0 $nav_ml$px;
+}
+$uicss .nav-menu .nav-item:last-child {
+	padding-right: 0;
+}
+$uicss .nav-menu .nav-item .nav-btn {
+	display: block;
+	line-height: 70px;
+	color: $firstcolor$;
+	color: $navcolor$;
+}
+$uicss .nav-menu .nav-item .nav-btn:hover {
+	color: $thirdcolor$;
+	color: $hovernavcolor$;
+}
+$uicss .nav-menu .nav-item-content {
+	position: relative;
+	padding: 10px 0;
+}
+$uicss .nav-menu .nav-item .nav-item-content:after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	display: block;
+	content: " ";
+	width: 0;
+	height: 1px;
+	background-color: $secondcolor$;
+	background-color: $hovernavcolor$;
+	transition: width .2s;
+	-webkit-transition: width .2s;
+}
+$uicss .nav-menu .nav-item.active .nav-item-content:after,
+$uicss .nav-menu .nav-item:hover .nav-item-content:after{
+	width: 100%;
+}
+$uicss .head-nav-wrapper {
+	position: absolute;
+	z-index: 1;
+    top: 114px;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    -webkit-transform: perspective(1000px) rotateX(-90deg);
+    transform: perspective(1000px) rotateX(-90deg);
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+$uicss .head-nav-wrapper.active {
+    opacity: 1;
+    -webkit-transform: perspective(1000px) rotateX(0deg);
+    transform: perspective(1000px) rotateX(0deg);
+}
+$uicss .head-nav-wrapper .nav-detail-item {
+	width: auto;
+	padding: 35px 20px;
+    border-radius: 4px;
+    background-color: $bodybgcolor$;
+    background-color: $menubgcolor$;
+    display: none;
+}
+$uicss .detail-item {
+	width: 180px;
+}
+$uicss .content-title {
+	display: inline-block;
+	margin-bottom: 24px;
+	margin-top: 0;
+	color: $secondcolor$;
+	color: $twocolor$;
+    font-size: 14px;
+    font-weight: 700;
+    -webkit-transition: color .5s;
+    transition: color .5s;
+}
+$uicss .content-title:hover {
+	color: $thirdcolor$;
+	color: $hovernavcolor$;
+}
+$uicss .content-item {
+	display: inline-block;
+	width: 100%;
+    padding-bottom: 6px;
+    color: $secondcolor$;
+    color: $three$;
+    -webkit-transition: color .5s;
+    transition: color .5s;
+}
+$uicss .content-item:hover {
+	color: $thirdcolor$;
+	color: $hovernavcolor$;
+}
+
+$uicss .mb-nav-wrapper {
+	display: none;
+}
+@media screen and ( min-width: 992px ) {
+	$uicss .nav-menu { 
+		display: block;
+	}
+}
+@media screen and ( min-width: 768px ) {
+	$uicss + div {
+		position: relative;
+		top: -70px;
+		margin-bottom: -70px;
+	}
+	$uicss.nav-fixed + div {
+		top: 44px;
+		margin-bottom: 44px;
+	}	
+
+	/* 搜索 */
+	$uicss .search-container {
+		padding: 11px 10px 0;
+	}
+	$uicss .search-wrap {
+		width: 160px;
+		line-height: 20px;
+		height: auto;
+		text-indent: 5px;
+		background-color: $input_bg_color$;
+		border: 1px solid $input_bg_color$;
+		padding: 0;
+		outline: none;
+	}
+	$uicss .search-btn {
+		display: block;
+		padding: 0;
+		height: 22px;
+		line-height: 22px;
+		cursor: pointer;
+		border: none;
+		width: 30px;
+		background-color: $thirdcolor$;
+		background-color: $search_btn_bg$;
+		color: $search_icon_color$;
+	}
+	$uicss .met-head-user .dropdown>a {
+		background-color: transparent;
+		color: $secondcolor$;
+		color: $topcolor$;
+	}
+	$uicss .met-head-user .dropdown:hover .dropdown-menu {
+		display: block;
+	}
+	$uicss .dropdown-menu {
+		border: none;
+		width: 110px;
+		border-radius: 4px;
+	}
+	$uicss .dropdown-item {
+		padding-top: 0;
+		padding-bottom: 0;
+		border-radius: 0;
+		transition: all 0s !important;
+		-webkit-transition: all 0s !important;
+		border: none;
+	}
+	$uicss .dropdown-item:hover i {
+		color: #fff;
+	}
+	$uicss .dropdown-item:hover {
+		background-color: $thirdcolor$ !important;
+		color: #fff;
+	}
+}
+
+@media screen and ( min-width: 768px ) and ( max-width: 991px ) {
+	$uicss .search-container {
+		display: block;
+	}
+	$uicss .nav-menu { 
+		display: block;
+	}
+	$uicss .nav-menu .nav-item {
+		padding: 0 $pb_nav_ml$px;
+	}
+}
+@media screen and ( max-width: 991px ) {
+
+	$uicss .mb-nav-wrapper {
+		position: fixed;
+		z-index: 9999;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: none;
+	}
+	$uicss .mb-nav-wrapper.active {
+		display: block;
+	}
+	$uicss .nav-mask {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #000;
+		opacity: 0.4;
+	}
+	$uicss .navbar-toggler {
+		margin-right: 0;
+		color: $navcolor$;
+	}
+	$uicss .navbar-toggler span,
+	$uicss .navbar-toggler:before,
+	$uicss .navbar-toggler:after {
+		background-color: #fff;
+	}
+	$uicss .nav-ul {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 75%;
+		height: 100%;
+		overflow: scroll;
+		-webkit-overflow-scrolling: touch;
+	    background-color: $bodybgcolor$;
+	    background-color: $menubgcolor$;
+	    opacity: 0;
+	    -webkit-transform: perspective(1000px) rotateY(-90deg);
+	    transform: perspective(1000px) rotateY(-90deg);
+	    -webkit-transform-origin: 100% 0;
+	    transform-origin: 100% 0;
+	}
+	$uicss .mb-nav-wrapper.active .nav-ul  {
+	    animation: navActive .3s ease forwards;
+	    -webkit-animation: navActive .3s ease forwards;
+	}
+	@keyframes navActive {
+		to {
+		    opacity: 1;
+		    transform: perspective(1000px) rotateY(0deg);
+		    -webkit-transform: perspective(1000px) rotateY(0deg);
+		}
+	}
+	$uicss .mb-detail-item  {
+		position: relative;
+		display: block;
+		height: 40px;
+	    line-height: 40px;
+	    width: 100%;
+	    position: relative;
+	    padding: 0 1rem;
+	    box-sizing: border-box;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+	    border-bottom: 1px solid;
+	    border-color:  $secondcolor$;
+	    border-color:  $mb_border_color$;
+	}
+	$uicss .mb-detail-item,
+	$uicss .mb-detail-item a,
+	$uicss .arrow-icon {
+	    color: $firstcolor$;
+	    color: $navcolor$;
+		font-size: 14px;
+	}
+	$uicss .arrow-icon {
+		position: absolute;
+		right: 1.5rem;
+		top: 0;
+		line-height: 40px;
+	}
+	$uicss .arrow-icon.active {
+		transform: rotate(180deg);
+		-webkit-transform: rotate(180deg);
+	}
+	$uicss .item-two-wrap {
+		display: none;
+	}
+	$uicss .item-two-content {
+		font-size: 14px;
+	    width: 100%;
+	    height: 40px;
+	    line-height: 40px;
+	    position: relative;
+	    padding: 0 1.5rem;
+	    box-sizing: border-box;
+	    display: block;
+	    border-bottom: 1px solid;
+	    border-color: $secondcolor$;
+	    border-color: $mb_border_color$;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+	}
+	$uicss .item-two-content,
+	$uicss .item-two-content a,
+	$uicss .item-two-content .arrow-icon {
+	    color: $secondcolor$;
+	    color: $twocolor$;
+	}
+
+	$uicss .item-three-wrap {
+		display: none;
+	}
+	$uicss .item-three-content a {
+		font-size: 14px;
+	    width: 100%;
+	    height: 40px;
+	    line-height: 40px;
+	    position: relative;
+	    padding: 0 2.4rem;
+	    box-sizing: border-box;
+	    display: block;
+	    border-bottom: 1px solid;
+	    border-color:  $secondcolor$;
+	    border-color:  $mb_border_color$;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+	    color: $secondcolor$;
+	    color: $three$;
+	}
+}
+@media screen and (max-width: 767px) {
+	$uicss .head-top-bar {
+		height: 30px;
+		line-height: 30px;
+	}
+	$uicss .top-text {
+		overflow: hidden;
+	}
+	$uicss .head-top-right {
+		display: none;
+	}
+	/* 搜索 */
+	$uicss .search-container {
+		margin-top: 15px;
+		width: 100%;
+		padding: 0 1rem;
+		display: flex;
+		display: -webkit-flex;
+		border-radius: 4px;
+		overflow: hidden;
+	}
+	$uicss .search-wrap {
+		flex: 1;
+		-webkit-flex: 1;
+		line-height: 30px;
+		height: auto;
+		text-indent: 5px;
+		background-color: $input_bg_color$;
+		border: none;
+		padding: 0;
+		outline: none;
+	}
+	$uicss .search-btn {
+		display: block;
+		padding: 0;
+		height: 32px;
+		line-height: 30px;
+		cursor: pointer;
+		border: none;
+		width: 40px;
+		background-color: $thirdcolor$;
+		background-color: $search_btn_bg$;
+		color: $search_icon_color$;
+	}
+	$uicss .navbar-nav .dropdown {
+		width: 100%;
+	}
+	$uicss .navbar-nav .dropdown-toggle::after {
+		opacity: 0;
+	}
+	$uicss .navbar-nav .dropdown i {
+		  color: $mb_one_color$;
+		  font-size: 14px;
+	}
+	$uicss .cut-language {
+		margin: 5px;
+		width: 120px;
+		padding: 5px 10px;
+	}
+	$uicss .mb-login-btn {
+		margin: 2rem 1rem 0;
+	}
+	$uicss .close-btn {
+		margin-right: -1rem;
+		padding: 0 1rem;
+	}
+}
