@@ -1,0 +1,157 @@
+
+$uicss .full-img img {
+	display: block;
+	width: 100%;
+}
+$uicss {
+	background-color: $bodybgcolor$;
+	background-color: $bgcolor$;
+	background-image: url($bgpic$);
+	background-size: cover;
+	background-position: center center;
+}
+$uicss .top-wrap {
+	position: relative;
+}
+$uicss .top-wrap:before {
+	position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    right: 102%;
+    top: 50%;
+}
+$uicss .title-sub-1,
+$uicss .title-sub-2 {
+    display: block;
+    text-transform: uppercase;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+$uicss .title-sub-2 {
+    font-size: 60px;
+    line-height: 70px;
+}
+$uicss .block-title {
+    position: relative;
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal;
+}
+$uicss .top-right {
+    font-style: normal;
+    font-size: 20px;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    background: #666;
+    padding: 10px 20px;
+    color: #fff;
+    box-shadow: 0 0 80px #00000020;
+}
+$uicss .content-wrap {
+	margin-top: 20px;
+}
+$uicss .left-wrap a {
+	display: block;
+}
+$uicss .black-box {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+$uicss .black-box::before { 
+	display: block;
+	content: " ";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #666666;
+	opacity: 0.8;
+}
+$uicss .black-wrap {
+	position: relative;
+	z-index: 1;
+	padding: 10px;
+}
+$uicss .left-black {
+	margin-bottom: 25px;
+}
+$uicss .case-title {
+	display: inline-block;
+	margin: 0;
+	font-size: 20px;
+	line-height: 20px;
+	height: 20px;
+	overflow: hidden;
+	color: $firstcolor$;
+	color: $content_color$;
+}
+$uicss .case-content {
+	display: inline-block;
+	margin: 5px 0 0;
+	text-align: justify;
+	color: #fff;
+}
+$uicss .swiper-pagination {
+	left: 5px;
+	width: auto !important;
+}
+$uicss .swiper-pagination-bullet {
+	background-color: #fff;
+	opacity: .5;
+}
+$uicss .swiper-pagination-bullet-active {
+	opacity: 1;
+}
+$uicss .look-btn {
+	display: block;
+    margin: 20px auto 0;
+    padding: 10px 0;
+    width: 15%;
+    text-align: center;
+    color: $thirdcolor$;
+    color: $btn_color$;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-color: $thirdcolor$;
+    border-color: $border_color$;
+}
+$uicss .look-btn:hover {
+	color: $active_btn_color$;
+	background-color: $thirdcolor$;
+	background-color: $active_btn_bg$;
+    border-color: $thirdcolor$;
+    border-color: $active_btn_bg$;
+}
+@media screen and ( min-width: 992px ) {
+	$uicss .container {
+		padding-top: $padding$px;
+		padding-bottom: $padding$px;
+	}
+	$uicss .left-wrap {
+		float: left;
+		width: 49%;
+	}
+	$uicss .right-wrap {
+		float: right;
+		width: 49%;
+		min-height: 100px;
+		background-color: #fe4545;
+	}
+}
+@media screen and ( min-width: 768px ) and ( max-width: 991px ) {
+	$uicss .container {
+		padding-top: $padding_p$px;
+		padding-bottom: $padding_p$px;
+	}
+}
+@media screen and ( max-width: 767px ) {
+	$uicss .container {
+		padding-top: $padding_m$px;
+		padding-bottom: $padding_m$px;
+	}
+}
